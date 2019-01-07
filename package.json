@@ -1,0 +1,22 @@
+{
+  "name": "alexa-server",
+  "version": "0.0.1",
+  "description": "This is a backend server written in express for alexa to consume",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "alexa",
+    "express",
+    "javascript",
+    "node"
+  ],
+  "author": "Manuel Fernandez",
+  "license": "MIT"
+}
