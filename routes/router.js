@@ -17,9 +17,9 @@ function get_random_cards(){
 }
 
 router.get('/', (req, res, next) => {
-    cards = get_random_cards();
+    var card_list = get_random_cards();
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(cards));
+    res.send(JSON.stringify(card_list));
 });
 
 module.exports = router;
