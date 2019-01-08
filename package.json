@@ -4,7 +4,8 @@
   "description": "This is a backend server written in express for alexa to consume",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9"
   },
   "devDependencies": {},
   "scripts": {
