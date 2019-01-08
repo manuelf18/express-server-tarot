@@ -4,8 +4,8 @@ const cards = require('../models/cards');
 
 function get_random_cards(){
     /* returns a random cards */
-    super_cards = [3];
-    ix = [3];
+    var super_cards = [];
+    var ix = [];
     for(i=0; i<=2; i++){
         do{
             index = Math.floor(Math.random() * cards.length);
