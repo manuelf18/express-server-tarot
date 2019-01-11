@@ -2,24 +2,25 @@ const express = require('express');
 const router = express.Router();
 const cards = require('../models/cards');
 
-function get_random_cards(){
+function getRandomCards(){
     /* returns random cards */
-    var super_cards = [];
-    var ix = [];
+    let index;
+    let selectedCards = [];
+    let indexIncluded = [];
     for(i=0; i<=2; i++){
         do{
             index = Math.floor(Math.random() * cards.length);
-        }while(ix.includes(index));
-        super_cards.push({name: cards[index].name, meaning: cards[index].meaning[i]});
-        ix.push(index);
+        }while(indexIncluded.includes(index));
+        selectedCards.push({name: cards[index].name, meaning: cards[index].meaning[i]});
+        indexIncluded.push(index);
     }
-    return super_cards;
+    return selectedCards;
 }
 
 router.get('/', (req, res, next) => {
-    var card_list = get_random_cards();
+    let cardList = getRandomCards();
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(card_list));
+    res.send(JSON.stringify(cardList));
 });
 
 module.exports = router;
