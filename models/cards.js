@@ -6,7 +6,7 @@ cards = [
     {name: 'hierophant', meaning: ['you were regarded as a spiritual authority', 'you are full of wisdom and energy', 'you are on the path of connecting with a higher self']},
     {name: 'lovers', meaning: ['you were faced with making an important choice', 'you are full of balance', 'you are on the path of finding a connection, maybe with another person or with yourself.']},
     {name: 'chariot', meaning: ['you miss both an emotional connection and your home.', 'you are full of nurturing, caring and nourishment', 'you are on the path of finding victory.']},
-    {name: 'chariot', meaning: ['you miss both an emotional connection and your home.', 'you are full of inner knowledge', 'you need to be alone, tune in, and listen to your instincts.']},
+    {name: 'hermit', meaning: ['you were a perfectionist, mostly because you were self critical of yourself', 'you are full of inner knowledge', 'you need to be alone, tune in, and listen to your instincts.']},
 ]
 
 module.exports = cards;
